@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="380" viewBox="0 0 1000 380" role="img" aria-labelledby="title desc">
+  <title id="title">Sortie Maven de MainTest</title>
+  <desc id="desc">Exécution réussie : une salle et une machine ont été insérées dans MySQL.</desc>
+  <rect width="1000" height="380" rx="16" fill="#111827"/>
+  <rect width="1000" height="48" rx="16" fill="#1f2937"/>
+  <circle cx="25" cy="24" r="7" fill="#f87171"/><circle cx="49" cy="24" r="7" fill="#fbbf24"/><circle cx="73" cy="24" r="7" fill="#34d399"/>
+  <text x="500" y="30" text-anchor="middle" fill="#d1d5db" font-family="Segoe UI, sans-serif" font-size="15">Terminal — MainTest</text>
+  <g font-family="Consolas, 'Courier New', monospace" font-size="17">
+    <text x="34" y="91" fill="#93c5fd">$ mvn -o -s .mvn/local-settings.xml -Dtest=test.MainTestRunnerTest test</text>
+    <text x="34" y="133" fill="#9ca3af">Hibernate ORM core version 5.6.15.Final</text>
+    <text x="34" y="171" fill="#d1d5db">Hibernate:</text>
+    <text x="58" y="198" fill="#d1d5db">insert into salles (code, libelle) values (?, ?)</text>
+    <text x="34" y="238" fill="#d1d5db">Hibernate:</text>
+    <text x="58" y="265" fill="#d1d5db">insert into machines (marque, ref, salle_id) values (?, ?, ?)</text>
+    <text x="34" y="310" fill="#86efac">Données insérées avec succès !</text>
+    <text x="34" y="350" fill="#86efac">BUILD SUCCESS — Tests run: 1, Failures: 0, Errors: 0</text>
+  </g>
+</svg>

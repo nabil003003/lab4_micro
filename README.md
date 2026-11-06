@@ -10,18 +10,16 @@ CREATE DATABASE db_tp_hibernate;
 
 Hibernate crée ensuite les tables au démarrage (`hbm2ddl.auto=update`). Lancer les tests avec `mvn test` après avoir configuré la connexion MySQL.
 
-## Exécution de l'exemple
+## Captures d'exécution
 
-Le rendu ci-dessous reprend la sortie de l'exécution réussie de `MainTest` via Maven.
+La console montre les requêtes d'insertion exécutées par Hibernate.
 
-![Sortie de MainTest](docs/screenshots/main-test.svg)
+![Terminal Hibernate](docs/screenshots/hibernate-terminal.jpg)
 
-`MainTest` a inséré la salle S1 et la machine M-101 (Dell) dans MySQL.
+Cette vue phpMyAdmin montre les machines Dell enregistrées et leurs identifiants de salle.
 
-## Données MySQL
+![Table des machines dans phpMyAdmin](docs/screenshots/mysql-machines-1.jpg)
 
-Résultat d'une vérification SQL effectuée après l'exécution de l'exemple.
+Cette seconde vue affiche les lignes de la table `machines` sans infobulle superposée.
 
-![Résultat des requêtes MySQL](docs/screenshots/mysql-data.svg)
-
-La table `machines` contient M-101, liée à la salle S1 par `salle_id`.
+![Détail de la table machines](docs/screenshots/mysql-machines-2.jpg)
